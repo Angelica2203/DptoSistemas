@@ -8,10 +8,13 @@ public class ObjComputador
     private String nomEstudiante;
     private int carnet;
     private boolean disponible;
-    public ObjComputador() {
+    private String cedula;
+    public ObjComputador() 
+    {
+        
     }
     public ObjComputador(String serial, String marca, int memoriaCam, int discoDuro, Double precio,
-            String nomEstudiante, int carnet, boolean disponible) {
+            String nomEstudiante, int carnet, boolean disponible, String cedula) {
         this.serial = serial;
         this.marca = marca;
         this.memoriaCam = memoriaCam;
@@ -20,6 +23,7 @@ public class ObjComputador
         this.nomEstudiante = nomEstudiante;
         this.carnet = carnet;
         this.disponible = disponible;
+        this.cedula = cedula;
     }
     public String getSerial() {
         return serial;
@@ -69,6 +73,13 @@ public class ObjComputador
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
+    public String getCedula() {
+        return cedula;
+    }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+    
     
 
 }

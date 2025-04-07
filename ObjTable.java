@@ -6,15 +6,18 @@ public class ObjTable
     private Double Precio;
     private String NombreUsuario;
     private boolean Disponible;
+    private String cedula;
     public ObjTable() {
     }
-    public ObjTable(String serial, String marca, int tamaño, Double precio, String nombreUsuario, boolean disponible) {
+    public ObjTable(String serial, String marca, int tamaño, Double precio, String nombreUsuario, boolean disponible,
+            String cedula) {
         Serial = serial;
         Marca = marca;
         Tamaño = tamaño;
         Precio = precio;
         NombreUsuario = nombreUsuario;
         Disponible = disponible;
+        this.cedula = cedula;
     }
     public String getSerial() {
         return Serial;
@@ -52,6 +55,13 @@ public class ObjTable
     public void setDisponible(boolean disponible) {
         Disponible = disponible;
     }
+    public String getCedula() {
+        return cedula;
+    }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+    
     
     //.oferr es como el push en pilas
     //= new Linked
