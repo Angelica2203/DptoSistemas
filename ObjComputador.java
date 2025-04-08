@@ -6,15 +6,12 @@ public class ObjComputador
     private int discoDuro;
     private Double precio;
     private String nomEstudiante;
-    private int carnet;
+    private String carnet;
     private boolean disponible;
-    private String cedula;
-    public ObjComputador() 
-    {
-        
+    public ObjComputador() {
     }
     public ObjComputador(String serial, String marca, int memoriaCam, int discoDuro, Double precio,
-            String nomEstudiante, int carnet, boolean disponible, String cedula) {
+            String nomEstudiante, String carnet, boolean disponible) {
         this.serial = serial;
         this.marca = marca;
         this.memoriaCam = memoriaCam;
@@ -23,7 +20,6 @@ public class ObjComputador
         this.nomEstudiante = nomEstudiante;
         this.carnet = carnet;
         this.disponible = disponible;
-        this.cedula = cedula;
     }
     public String getSerial() {
         return serial;
@@ -61,10 +57,10 @@ public class ObjComputador
     public void setNomEstudiante(String nomEstudiante) {
         this.nomEstudiante = nomEstudiante;
     }
-    public int getCarnet() {
+    public String getCarnet() {
         return carnet;
     }
-    public void setCarnet(int carnet) {
+    public void setCarnet(String carnet) {
         this.carnet = carnet;
     }
     public boolean isDisponible() {
@@ -72,12 +68,6 @@ public class ObjComputador
     }
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
-    }
-    public String getCedula() {
-        return cedula;
-    }
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
     }
     
     

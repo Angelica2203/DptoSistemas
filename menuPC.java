@@ -50,22 +50,22 @@ public class menuPC
             switch (opc) 
             {
                 case 1:
-                    //pc = met.RegistrarComputador(pc);
+                    pc = met.IngresarComputador(pc);
                     break;
                 case 2:
-                    //pc = met.PrestarComputador(pc);
+                    pc = met.PrestarComputador(pc);
                     break;
                 case 3:
-                    //pc = met.ModificarComputador(pc);
+                    pc = met.ModificarComputador(pc);
                     break;
                 case 4:
-                    //pc = met.DevolverComputador(pc);
+                    pc = met.DevolverComputador(pc);
                     break;
                 case 5:
-                    //pc = met.InventarioComputador(pc);
+                    pc = met.InventarioComputador(pc);
                     break;
                 case 6:
-                    //pc = met.EliminarComputador(pc);
+                    pc = met.EliminarComputador(pc);
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Se ha salido del menú de Computadores.");

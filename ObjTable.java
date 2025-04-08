@@ -1,67 +1,68 @@
 public class ObjTable 
 {
-    private String Serial;
-    private String Marca;
-    private int Tamaño;
-    private Double Precio;
-    private String NombreUsuario;
-    private boolean Disponible;
-    private String cedula;
+    private String serial;
+    private String marca;
+    private Double tamaño;
+    private Double precio;
+    private String nombreUsuario;
+    private String carnet;
+    private boolean disponible;
     public ObjTable() {
     }
-    public ObjTable(String serial, String marca, int tamaño, Double precio, String nombreUsuario, boolean disponible,
-            String cedula) {
-        Serial = serial;
-        Marca = marca;
-        Tamaño = tamaño;
-        Precio = precio;
-        NombreUsuario = nombreUsuario;
-        Disponible = disponible;
-        this.cedula = cedula;
+    public ObjTable(String serial, String marca, Double tamaño, Double precio, String nombreUsuario, String carnet,
+            boolean disponible) {
+        this.serial = serial;
+        this.marca = marca;
+        this.tamaño = tamaño;
+        this.precio = precio;
+        this.nombreUsuario = nombreUsuario;
+        this.carnet = carnet;
+        this.disponible = disponible;
     }
     public String getSerial() {
-        return Serial;
+        return serial;
     }
     public void setSerial(String serial) {
-        Serial = serial;
+        this.serial = serial;
     }
     public String getMarca() {
-        return Marca;
+        return marca;
     }
     public void setMarca(String marca) {
-        Marca = marca;
+        this.marca = marca;
     }
-    public int getTamaño() {
-        return Tamaño;
+    public Double getTamaño() {
+        return tamaño;
     }
-    public void setTamaño(int tamaño) {
-        Tamaño = tamaño;
+    public void setTamaño(Double tamaño) {
+        this.tamaño = tamaño;
     }
     public Double getPrecio() {
-        return Precio;
+        return precio;
     }
     public void setPrecio(Double precio) {
-        Precio = precio;
+        this.precio = precio;
     }
     public String getNombreUsuario() {
-        return NombreUsuario;
+        return nombreUsuario;
     }
     public void setNombreUsuario(String nombreUsuario) {
-        NombreUsuario = nombreUsuario;
+        this.nombreUsuario = nombreUsuario;
+    }
+    public String getCarnet() {
+        return carnet;
+    }
+    public void setCarnet(String carnet) {
+        this.carnet = carnet;
     }
     public boolean isDisponible() {
-        return Disponible;
+        return disponible;
     }
     public void setDisponible(boolean disponible) {
-        Disponible = disponible;
-    }
-    public String getCedula() {
-        return cedula;
-    }
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+        this.disponible = disponible;
     }
     
+
     
     //.oferr es como el push en pilas
     //= new Linked
