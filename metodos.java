@@ -206,11 +206,18 @@ public class metodos
         serial = sc.next();
         for (ObjComputador pc : c) 
         {
-            if (pc.getSerial().equalsIgnoreCase(serial) && !pc.isDisponible()) 
+            if (pc.getSerial().equalsIgnoreCase(serial)) 
             {
                 serialEncontrado = true;
-                pc.setDisponible(true);
-                System.out.println("Dispositivo devuelto correctamente");
+                if (pc.isDisponible()) 
+                {
+                    JOptionPane.showMessageDialog(null, "El dispositivo ya está disponible, no es necesario devolverlo.");
+                } 
+                else 
+                {
+                    pc.setDisponible(true);
+                    System.out.println("Dispositivo devuelto correctamente");
+                }
                 break;
             }
         }
